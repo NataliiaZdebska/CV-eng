@@ -46,15 +46,6 @@ body {
   width: 100%;
 }
 
-.socials {
-    display: flex;
-    justify-content: space-between;
-}
-
-.socials__list {
-    padding: 10px 30px 10px 0;
-}
-
 .title {
     text-align: center;
     text-transform: uppercase;
@@ -68,6 +59,20 @@ body {
     text-transform: uppercase;
     font-style: italic;
     font-size: 1rem;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-around;
+}
+
+.socials__list:last-child {
+    width: 60%;
+}
+
+.socials__list {
+    width: 35%;
+    padding: 10px 0;
 }
 
 .socials__item {
