@@ -4,14 +4,20 @@
   box-sizing: border-box;
 }
 
-root {
-  --clr-main: rgba(97, 95, 95, 1);
-  --clr-middle: rgb(97, 95, 95, 0.7);
-}
-
 a {
   text-decoration: none;
   color: inherit;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 600;
+    padding: 5px 0;
+}
+
+p {
+    padding: 5px 0;
 }
 
 body {
@@ -20,6 +26,7 @@ body {
   margin: 0 auto 50px;
   color: #000000;
   border: 1px solid rgb(97, 95, 95);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header {
@@ -35,35 +42,36 @@ body {
     list-style: none;
 }
 
-.header__photo {
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.header__photo_img {
-    width: 100%;
-    max-width: 200px;
-    height: fit-content;
-}
-
 .personal__info {
-  width: 55%;
+  width: 100%;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials__list {
+    padding: 10px 30px 10px 0;
 }
 
 .title {
-  text-align: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    padding-bottom: 1rem;
 }
 
 .subtitle {
-  padding-bottom: 10px;
-  text-align: center;
+    padding-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
 }
 
 .socials__item {
   padding-bottom: 10px;
-  margin: 10px auto;
+  margin: 0 auto;
 }
 
 .socials__item::before {
@@ -76,21 +84,37 @@ body {
   color: #9eadec;
 }
 
+.main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.right__section {
+    width: 29%;
+}
+
+.left__section {
+    width: 69%;
+}
+
+
 .section__wrapper {
-  padding: 5px 20px;
-  display: flex;
-  flex-direction: column;
+  padding: 10px 5px;
 }
 
 .section__item {
   display: flex;
-  margin-bottom: 20px;
+    justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .section__title {
   width: 100%;
   padding: 10px;
   margin: 0;
+    font-size: 1.2rem;
+    font-weight: 600;
   background-color: rgb(204, 201, 201);
   transition: all 0.7s ease-in-out;
   text-align: center;
@@ -103,13 +127,20 @@ body {
 }
 
 .section__year {
-  width: 20%;
-  padding: 10px 5px;
+    padding: 0;
 }
 
-.section__position,
+.section__position {
+  width: 35%;
+}
+
 .section__desc {
-  width: 40%;
+    width: 60%;
+    list-style: disc;
+}
+
+.section__place {
+    font-weight: 600;
 }
 
 .add_list li,
@@ -117,8 +148,8 @@ body {
   padding-bottom: 5px;
 }
 
-.education__desc {
-  width: 80%;
+.summary__text {
+    text-indent: 1.5rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -151,9 +182,4 @@ body {
         background-color: rgba(97, 95, 95, 0.1);
         border-radius: 4px;
     }
-
-    .education__desc {
-        width: 100%;
-    }
-
 }
