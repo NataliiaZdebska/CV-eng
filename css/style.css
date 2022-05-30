@@ -108,14 +108,13 @@ body {
     width: 69%;
 }
 
-
 .section__wrapper {
   padding: 10px 5px;
 }
 
 .section__item {
   display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 30px;
 }
 
@@ -123,8 +122,8 @@ body {
   width: 100%;
   padding: 10px;
   margin: 0;
-    font-size: 1.2rem;
-    font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 600;
   background-color: rgb(204, 201, 201);
   transition: all 0.7s ease-in-out;
   text-align: center;
@@ -160,6 +159,11 @@ body {
 
 .summary__text {
     text-indent: 1.5rem;
+}
+
+.education__list {
+  padding: 5px 20px;
+  list-style: disc;
 }
 
 @media screen and (max-width: 767px) {
